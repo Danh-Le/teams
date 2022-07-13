@@ -12,10 +12,10 @@ class App extends React.Component {
       count: 10,
     }
   }
-  handleClickMoins = () => {
-    if (this.state.count > 1) {
-      let counterMoins = this.state.count - 1
-      this.setState({count: counterMoins})
+handleClickMoins = () => {
+  if (this.state.count > 1) {
+    let counterMoins = this.state.count - 1
+    this.setState({count: counterMoins})
   }
 }
 handleClickPlus = () => {
@@ -24,7 +24,6 @@ handleClickPlus = () => {
   this.setState({count: counterPlus})
   }
 }
-
 
   render() {
     return (
@@ -36,19 +35,20 @@ handleClickPlus = () => {
           increment={this.handleClickPlus}
           />
       <article class="teamsCard">
-      {teams.map(member => {
+       {teams.filter((team, i) =>
+        i < this.state.count).map(team => {    
         return (
-          <TeamInfo
-          shortName={member.shortName}
-          crestUrl={member.crestUrl}
-          venue={member.venue}
-          address={member.address}
-          email={member.email}
-          tel={member.tel}
-          founded={member.founded}
+          <TeamInfo 
+          shortName={team.shortName}
+          crestUrl={team.crestUrl}
+          venue={team.venue}
+          address={team.address}
+          email={team.email}
+          tel={team.tel}
+          founded={team.founded}
           />
-        )
-      })}
+        )})
+      }
       </article> 
       </div>
     );
@@ -56,3 +56,4 @@ handleClickPlus = () => {
 }
 
 export default App;
+

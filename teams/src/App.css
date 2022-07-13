@@ -33,6 +33,7 @@
 }
 h1 {
   text-align: center;
+  font-size: 70px;
 }
 .teams {
   display: flex;
@@ -42,6 +43,7 @@ h1 {
 .teamContainer {
   display: flex;
   border: 3px solid black;
+
 }
 .counterApp {
   text-align: center;
@@ -67,7 +69,7 @@ h1 {
 }
 .picture {
   width: 90px;
-  justify-content: center;
+  text-align: center;
 }
 h2 {
   text-align: center;
@@ -84,4 +86,5 @@ h2 {
   border: 5px solid black;
   padding: 20px 20px;
   border-radius: 20px;
+  background-color: rgb(181, 203, 236);
 }
