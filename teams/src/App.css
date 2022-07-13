@@ -31,3 +31,57 @@
     transform: rotate(360deg);
   }
 }
+h1 {
+  text-align: center;
+}
+.teams {
+  display: flex;
+  flex-direction: column;
+
+}
+.teamContainer {
+  display: flex;
+  border: 3px solid black;
+}
+.counterApp {
+  text-align: center;
+}
+.buttonMoins {
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: black;
+  color: wheat;
+  padding: 0px 20px;
+}
+.buttonPlus {
+  border-radius: 30px;
+  font-size: 30px;
+  background-color: black;
+  color: wheat;
+  padding: 0px 17px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.picture {
+  width: 90px;
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+}
+.teamsCard {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 20px;
+}
+.teamInfo {
+  border: 5px solid black;
+  padding: 20px 20px;
+  border-radius: 20px;
+}

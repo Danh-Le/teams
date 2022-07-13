@@ -1,10 +1,11 @@
 import React from 'react'
 
+
 class TeamInfo extends React.Component {
   render() {
     return (
-      <div className="teamInfo">
-      <img src={this.props.crestUrl} alt="member"/>
+      <div class="teamContainer" className="teamInfo">
+      <img class="picture" src={this.props.crestUrl} alt="member"/>
       <h2>{this.props.shortName}</h2>
       <p>{this.props.venue}</p>
       <p>{this.props.address}</p>
